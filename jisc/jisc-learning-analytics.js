@@ -589,26 +589,31 @@
 		
 			
             "rules": [
+
+			
+			
                 {
+                    "location": "$.context.extensions['http://xapi.jisc.ac.uk/version']",
+                    "presence": "recommended"
+                },
+                {
+                    "location": "$.context.extensions['http://xapi.jisc.ac.uk/sessionId']",
+                    "presence": "recommended"
+                },
+				{
+                    "location": "$.context.extensions['http://id.tincanapi.com/extensions/ip-address']",
+                    "presence": "recommended"
+                },
+				{
+                    "location": "$.context.extensions['http://xapi.jisc.ac.uk/courseArea']",
+                    "presence": "recommended"
+                },
+				
+				                {
                     "location": "$.context.platform",
                     "presence": "included"
-                },
-                {
-                    "location": "$.context.extensions.version",
-                    "presence": "recommended"
-                },
-                {
-                    "location": "$.context.extensions.sessionId",
-                    "presence": "recommended"
-                },
-				{
-                    "location": "$.context.extensions.ip-address",
-                    "presence": "recommended"
-                },
-				{
-                    "location": "$.context.extensions.courseArea",
-                    "presence": "recommended"
-                },
+                }
+				
             ]
         }
 
